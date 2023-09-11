@@ -101,3 +101,33 @@ form{
     margin-bottom: 0.6rem;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
+
+
+  @media (max-width:1300px)
+  {
+    .image{
+      margin: 0.5rem;
+    }
+  
+    .signUp h3{
+      margin: 0;
+    }
+  
+    .create-account-btn{
+      font-size: 0.8rem;
+    }
+  
+    .button{
+      margin: 0.3rem;
+    }
+  
+    .h4{
+      font-size: 0.8rem;
+    }
+  
+    .go-to-login-page{
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+  }

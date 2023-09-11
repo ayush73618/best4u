@@ -12,19 +12,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: large;
+    font-size: 1.3rem;
 }
 
 
 .navLink li{
     padding: 1rem;
     margin: 0.5rem;
+    color: #0e9fe4;
    
     
 }
 
 .navLink li a{
-    color: darkblue;
+    /* color: darkblue; */
+    color: #0e9fe4;
+    font-weight: 500;
 }
 
 .navLink li:hover{
@@ -33,18 +36,34 @@
     
 }
 
-.navLink:hover li{
+/* .navLink:hover li{
     filter: blur(4px);
     transition: 0.5s;
 }
 
 .navLink:hover li:hover{
     filter: blur(0);
-}
+} */
 
 .logo{
-    height: 60px;
-    width: 60px;
+    width: 10ch;
+    overflow: hidden;
+    font-weight: 800;
+    background: linear-gradient(45deg,#0e9fe4,#0f9e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: typing 2.5s steps(10) infinite alternate-reverse;
+}
+
+@keyframes typing {
+    from{
+        width: 0ch;
+    }
+    to{
+        width: 10ch;
+    }
+    
 }
 
 .dropdown{
@@ -85,3 +104,25 @@ cursor: pointer;
     rotate: 180deg;
 }
 
+  
+
+
+
+
+@media (max-width:1300px){
+    
+    .nav{
+        height: 50px;
+    }
+ .navLink{font-size: 1rem;}
+    .navLink li{
+        padding: 0.5rem;
+    }
+
+    .dropdown-list{
+        top: 2.3rem;
+        left: 0rem;
+    }
+
+
+}

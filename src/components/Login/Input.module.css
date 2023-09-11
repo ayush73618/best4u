@@ -26,7 +26,7 @@
     border: none;
     border-bottom: 1px solid #fff;
     color: #fff;
-  font-size: 20px;
+    font-size: 20px;
     
   }
   
@@ -40,3 +40,23 @@
     border: 1px solid red;
   }
   
+  @media (max-width:1300px)
+{
+ .input label{
+  font-size: 15px;
+  transform: translateY(-28px);
+ }
+
+ .input input{
+  height: 25px;
+  padding: 0;
+  margin: 0;
+ }
+
+ .input > :is(input:focus, .has-value) ~ label {
+  font-size: 13px;
+  transform: translateY(-52px);
+  margin-top: 10px;
+}
+
+}

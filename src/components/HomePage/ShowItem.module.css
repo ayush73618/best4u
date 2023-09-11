@@ -23,7 +23,7 @@
     border: 1px solid #333;
     border-radius: 12px;
     background-color: #fff;
-    overflow: scroll;
+    overflow-x: scroll;
 }
 
 

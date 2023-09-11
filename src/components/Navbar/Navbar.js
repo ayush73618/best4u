@@ -2,6 +2,7 @@ import React from 'react'
 import classes from './Navbar.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { loginActions } from '../Store/login';
+import CartButton from '../utilities/CartButton';
 
 const Navbar = () => {
  const isLoggedIn =useSelector(state=>state.loginReducer.isLoggedIn);
@@ -18,7 +19,7 @@ const Navbar = () => {
   
    return (
     <nav className={classes.nav}>
-        <a href='/'><img src="Assets/logo.png" alt='logo' className={classes.logo}/></a>
+        <a href='/'><h2 className={classes.logo}>Best4U</h2></a>
         <ul className={classes.navLink}>
             <li><a href='/'>Home</a></li>
             {isLoggedIn && <li className={classes.dropdown}>My Profile <i className="fa-solid fa-angle-down"></i>
@@ -26,10 +27,10 @@ const Navbar = () => {
                 <li>About me</li>
                 <li>My Orders</li>
                 <li>Edit Account</li>
+
                </ul>
-
-
-              </li>}
+               </li>}
+               {isLoggedIn && <li> <CartButton/></li>}
            {!isLoggedIn &&<li><a href='##' onClick={showLoginModal}>Login/Signup</a></li>}
            {isLoggedIn && <li><a href="##" onClick={logout}>Log out</a></li>}
             <li><a href='##'>Contact us</a></li>

@@ -90,13 +90,13 @@ input > :is(input:focus, .has-value) ~ label{
   }
   
   .loginbutton {
-    background-color: purple;
-  
-    color: #fff;
+    background-color: #03e9f4;
+    color: #000;
+    font-weight: 800;
   }
   .loginbutton:hover {
-    box-shadow: 0 0 5px #2876ff, 0 0 25px #2876ff, 0 0 50px #2876ff,
-      0 0 100px #2876ff;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+      0 0 100px #03e9f4;
   }
   button:disabled:hover {
     box-shadow: none;
@@ -132,4 +132,30 @@ input > :is(input:focus, .has-value) ~ label{
   font-size: 1.2rem;
   margin-bottom: 0.6rem;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+@media (max-width:1300px){
+
+  .image{
+    margin: 0.5rem;
+  }
+
+  .login h3{
+    margin: 0.5rem;
+  }
+
+  .create-account-btn{
+    font-size: 0.8rem;
+  }
+
+  .button{
+    margin: 0.3rem;
+  }
+
+  .h4{
+    font-size: 0.8rem;
+  }
+
+
 }

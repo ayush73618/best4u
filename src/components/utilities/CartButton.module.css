@@ -1,0 +1,25 @@
+.btnClasses {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 0.2rem 0.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #0e9fe4;
+  }
+
+.icon {
+    width: 1.35rem;
+    height: 1.35rem;
+    margin-right: 0.5rem;
+  }
+
+  .totalCartItems{
+    position: fixed;
+    top: 0.2rem;
+  }
