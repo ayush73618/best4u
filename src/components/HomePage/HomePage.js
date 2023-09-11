@@ -20,7 +20,7 @@ const HomePage = () => {
     
   // })
 
-  const pictureArray = [['Assets/camera/cam-display.avif','Assets/camera/pic-1.jpg',
+  const pictureArray = [['Assets/camera/cam-display-1.jpg','Assets/camera/pic-1.jpg',
   'Assets/camera/pic-2.jpg','Assets/camera/pic-3.jpg','Assets/camera/pic-4.jpg'],
   ['Assets/Clothing/pic-1.jpg','Assets/Clothing/pic-2.webp',
   'Assets/Clothing/pic-3.jpg','Assets/Clothing/pic-4.jpg','Assets/Clothing/pic-5.webp'],

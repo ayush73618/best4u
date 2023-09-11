@@ -7,7 +7,7 @@ const ShowItems = (props) => {
       <div className={classes.box}><img src={props.img} alt=""   className={classes.image}/></div>
       <h3>{props.types}</h3>
       <h4>{props.tagline}</h4>
-      <button>Shop Now</button>
+      {/* <button>Shop Now</button> */}
       
     </div>
   )

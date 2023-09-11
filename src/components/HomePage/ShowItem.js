@@ -6,7 +6,8 @@ const ShowItem = (props) => {
     
     <div className={`${classes['show-menu']}`  }>
      <div>
-        <h2 style={{'marginLeft':'1rem'}}>
+        <h2 style={{'marginLeft':'1rem',
+      'textAlign':'center'}}>
           {props.type}
         </h2>
         
