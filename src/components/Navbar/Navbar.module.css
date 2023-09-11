@@ -1,0 +1,87 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    background: linear-gradient(to top left,green,white,orange);
+}
+
+
+.navLink{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+
+
+.navLink li{
+    padding: 1rem;
+    margin: 0.5rem;
+   
+    
+}
+
+.navLink li a{
+    color: darkblue;
+}
+
+.navLink li:hover{
+    background: linear-gradient(to top left,orange,white,green);
+    border-radius: 4px;
+    
+}
+
+.navLink:hover li{
+    filter: blur(4px);
+    transition: 0.5s;
+}
+
+.navLink:hover li:hover{
+    filter: blur(0);
+}
+
+.logo{
+    height: 60px;
+    width: 60px;
+}
+
+.dropdown{
+position: relative;
+color: darkblue;
+cursor: pointer;
+
+}
+
+.dropdown-list{
+    display: none;
+    position: absolute;
+    top: 3.3rem;
+    left:1rem;
+    width: 200px;
+    background: linear-gradient(to top left,green,white,orange);
+    border-radius: 8px;
+    transition: all 1s ease-in;
+
+
+}
+
+.dropdown-list li{
+    text-align: left;
+    border-bottom: 1px solid #333;
+    margin: 0;
+}
+
+.dropdown-list li:last-child{
+    border-bottom: none;
+}
+
+.dropdown:hover .dropdown-list{
+    display: inline-block;
+}
+
+.dropdown:hover i{
+    rotate: 180deg;
+}
+
