@@ -19,7 +19,9 @@ const Navbar = () => {
   
    return (
     <nav className={classes.nav}>
+      <div className={classes['logo-div']}>
         <a href='/'><h2 className={classes.logo}>Best4U</h2></a>
+        </div>
         <ul className={classes.navLink}>
             <li><a href='/'>Home</a></li>
             {isLoggedIn && <li className={classes.dropdown}>My Profile <i className="fa-solid fa-angle-down"></i>

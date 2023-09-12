@@ -10,7 +10,8 @@
     align-items: center;
     border-radius: 25px;
     font-weight: bold;
-    color: #0e9fe4;
+    /* color: #0e9fe4; */
+    color: #fff;
   }
 
 .icon {

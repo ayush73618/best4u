@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-around;
     height: 70px;
-    background: linear-gradient(to top left,green,white,orange);
+    background: linear-gradient(to top left,grey,darkblue);
 }
 
 
@@ -19,19 +19,21 @@
 .navLink li{
     padding: 1rem;
     margin: 0.5rem;
-    color: #0e9fe4;
+    /* color: #0e9fe4; */
+    color: #fff;
    
     
 }
 
 .navLink li a{
     /* color: darkblue; */
-    color: #0e9fe4;
-    font-weight: 500;
+    /* color: #0e9fe4; */
+    color: #fff;
+    font-weight: 600;
 }
 
 .navLink li:hover{
-    background: linear-gradient(to top left,orange,white,green);
+    background: linear-gradient(to top left,darkblue,grey);
     border-radius: 4px;
     
 }
@@ -49,11 +51,16 @@
     width: 10ch;
     overflow: hidden;
     font-weight: 800;
+    font-size: 2rem;
     background: linear-gradient(45deg,#0e9fe4,#0f9e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    animation: typing 2.5s steps(10) infinite alternate-reverse;
+    animation: typing 2s steps(10) infinite alternate-reverse;
+}
+
+.logo-div{
+    width: 300px;
 }
 
 @keyframes typing {
@@ -79,7 +86,7 @@ cursor: pointer;
     top: 3.3rem;
     left:1rem;
     width: 200px;
-    background: linear-gradient(to top left,green,white,orange);
+    background: linear-gradient(to top left,grey,darkblue);
     border-radius: 8px;
     transition: all 1s ease-in;
 
