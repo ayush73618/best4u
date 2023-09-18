@@ -23,9 +23,29 @@
     border: 1px solid #333;
     border-radius: 12px;
     background-color: #fff;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 
+@media (max-width:599px){
+    .show-menu{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+}
+
+@media (min-width:600px) and (max-width:900px){
+    .show-menu {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:400px) {
+    .show-menu {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        place-items: center;
+    }
+}
 
 /* @media (max-width:1200px) {
     .show-menu{

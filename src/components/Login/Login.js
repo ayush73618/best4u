@@ -61,8 +61,15 @@ const Login = () => {
   }
 
   const onSubmit=()=>{
+
+    // fetch('https:localhost:8080/users').then((data)=>{
+    //   console.log(data);
+    // })
+
+    localStorage.setItem("isActive",true)
         
         dispatch(loginActions.login());
+        
   }
   return (
     <Modal onClose={onClose}>
