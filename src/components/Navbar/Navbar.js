@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./Navbar.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { loginActions } from "../Store/login";
@@ -6,9 +6,18 @@ import CartButton from "../utilities/CartButton";
 
 const Navbar = () => {
   const isLoggedIn = useSelector((state) => state.loginReducer.isLoggedIn);
+  const [showHamLink, setShowHamLink] = useState(false);
+  const [windowsDimension, setWindowsDimension] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+  const showHamLinks = () => {
+    setShowHamLink((prevState) => !prevState);
+  };
 
   const dispatch = useDispatch();
   const showLoginModal = () => {
+    setShowHamLink(false);
     dispatch(loginActions.showLogin());
   };
 
@@ -17,6 +26,26 @@ const Navbar = () => {
     dispatch(loginActions.logout());
   };
 
+  const detectSize = () => {
+    setWindowsDimension({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", detectSize);
+    if (windowsDimension.innerWidth < 850) {
+      setShowHamLink(true);
+    } else {
+      setShowHamLink(false);
+    }
+
+    return () => {
+      window.removeEventListener("resize", detectSize);
+    };
+  }, [windowsDimension]);
+
   return (
     <nav className={classes.nav}>
       <div className={classes["logo-div"]}>
@@ -24,7 +53,12 @@ const Navbar = () => {
           <h2 className={classes.logo}>Best4U</h2>
         </a>
       </div>
-      <ul className={classes.navLink}>
+      <div className={classes["hamburger-menu"]} onClick={showHamLinks}>
+        <i className="fa-solid fa-bars"></i>
+      </div>
+      <ul
+        className={!showHamLink ? `${classes.navLink}` : `${classes.hamLink}`}
+      >
         <li>
           <a href="/">Home</a>
         </li>
@@ -40,7 +74,6 @@ const Navbar = () => {
         )}
         {isLoggedIn && (
           <li>
-            {" "}
             <CartButton />
           </li>
         )}
