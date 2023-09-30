@@ -6,6 +6,7 @@ import CartButton from "../utilities/CartButton";
 
 const Navbar = () => {
   const isLoggedIn = useSelector((state) => state.loginReducer.isLoggedIn);
+  const loggedUser = useSelector((state) => state.loginReducer.loggedUser);
   const [showHamLink, setShowHamLink] = useState(false);
   const [windowsDimension, setWindowsDimension] = useState({
     width: window.innerWidth,
@@ -22,7 +23,6 @@ const Navbar = () => {
   };
 
   const logout = () => {
-    localStorage.removeItem("isActive");
     dispatch(loginActions.logout());
   };
 
@@ -64,9 +64,9 @@ const Navbar = () => {
         </li>
         {isLoggedIn && (
           <li className={classes.dropdown}>
-            My Profile <i className="fa-solid fa-angle-down"></i>
+            {loggedUser.firstName} <i className="fa-solid fa-angle-down"></i>
             <ul className={classes["dropdown-list"]}>
-              <li>About me</li>
+              <li>About MySelf</li>
               <li>My Orders</li>
               <li>Edit Account</li>
             </ul>

@@ -1,62 +1,78 @@
 .input {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .input label {
-    transform: translateY(-38px);
-    margin: 0.2rem;
-    margin-left: 1rem;
-    font-size: 20px;
-    z-index: 10;
-    transition: transform 0.5s ease-in;
-  }
-  .input input {
-    width: 100%;
-    height: 35px;
-    border-radius: 5px;
-    padding: 0.4rem;
-    outline: none;
-    margin: 0.2rem;
-    border: none;
-    background: transparent;
-    color: #000;
-    outline: none;
-    z-index: 1;
-    border: none;
-    border-bottom: 1px solid #fff;
-    color: #fff;
-    font-size: 20px;
-    
-  }
-  
-  .input > :is(input:focus, .has-value) ~ label {
-    font-size: 18px;
-    transform: translateY(-70px);
-    margin-top: 10px;
-  }
-  
-  .input .error {
-    border: 1px solid red;
-  }
-  
-  @media (max-width:1300px)
-{
- .input label{
-  font-size: 15px;
-  transform: translateY(-26px);
- }
+  display: flex;
+  flex-direction: column;
+}
 
- .input input{
-  height: 25px;
-  padding: 0;
-  margin: 0;
- }
+.input label {
+  transform: translateY(-38px);
+  margin: 0.2rem;
+  margin-left: 1rem;
+  font-size: 20px;
+  z-index: 10;
+  transition: transform 0.5s ease-in;
+}
+.input input {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  padding: 0.4rem;
+  outline: none;
+  margin: 0.2rem;
+  border: none;
+  background: transparent;
+  color: #000;
+  outline: none;
+  z-index: 1;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 20px;
+}
 
- .input > :is(input:focus, .has-value) ~ label {
-  font-size: 13px;
-  transform: translateY(-52px);
+.input > :is(input:focus, .has-value) ~ label {
+  font-size: 18px;
+  transform: translateY(-70px);
   margin-top: 10px;
 }
 
+.input .error {
+  border: 1px solid red;
+  animation: animate 0.1s;
+  box-shadow: 1px 1px 1px red;
+}
+
+@keyframes animate {
+  0% {
+    margin-left: 0.3rem;
+  }
+  25% {
+    margin-left: 0;
+  }
+
+  50% {
+    margin-left: -0.3rem;
+  }
+
+  100% {
+    margin-left: 0.2rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .input label {
+    font-size: 15px;
+    transform: translateY(-26px);
+  }
+
+  .input input {
+    height: 25px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .input > :is(input:focus, .has-value) ~ label {
+    font-size: 13px;
+    transform: translateY(-52px);
+    margin-top: 10px;
+  }
 }

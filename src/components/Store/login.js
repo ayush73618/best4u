@@ -1,6 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
+  loggedUser: localStorage.getItem("user")
+    ? JSON.parse(localStorage.getItem("user"))
+    : {},
   isLoggedIn: localStorage.getItem("isActive") ? true : false,
   showLoginModal: false,
   showSignUpModal: false,
@@ -34,6 +37,12 @@ const loginSlice = createSlice({
     },
     logout(state) {
       state.isLoggedIn = false;
+      localStorage.removeItem("isActive");
+      localStorage.removeItem("user");
+    },
+    loggedUser(state, action) {
+      const user = action.payload;
+      state.loggedUser = user;
     },
   },
 });

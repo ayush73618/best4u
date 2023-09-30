@@ -5,6 +5,7 @@ import Modal from "../utilities/Modal";
 import { useDispatch } from "react-redux";
 import { loginActions } from "../Store/login";
 import loginImage from "../../Assets/loginImage.png";
+import { signup } from "../Store/login-signup-url";
 
 const SignUp = () => {
   const dispatch = useDispatch();
@@ -32,8 +33,10 @@ const SignUp = () => {
     (enteredMobileNo.length < 10 || enteredMobileNo.length > 10) &&
     isMobileNoTouched;
 
-  const isEmailValid = enteredEmail.includes("@") && isEmailTouched;
-  const isEmailHasError = !enteredEmail.includes("@") && isEmailTouched;
+  const emailRegex = /^([a-zA-Z0-9._%-]+@[a-zA-Z.-]+\.[a-zA-Z]{2,})$/;
+
+  const isEmailValid = emailRegex.test(enteredEmail) && isEmailTouched;
+  const isEmailHasError = !emailRegex.test(enteredEmail) && isEmailTouched;
 
   const isPasswordValid = enteredPassword.length > 6 && isPasswordTouched;
   const isPasswordHasError = enteredPassword.length <= 6 && isPasswordTouched;
@@ -92,16 +95,27 @@ const SignUp = () => {
     isMobileNoValid &&
     isEmailValid &&
     isPasswordValid;
-
-  if (
-    isFirstNameValid &&
-    isLastNameValid &&
-    isMobileNoValid &&
-    isEmailValid &&
-    isPasswordValid
-  ) {
-    formIsValid = true;
-  }
+  const onSignup = (event) => {
+    event.preventDefault();
+    if (
+      isFirstNameValid &&
+      isLastNameValid &&
+      isMobileNoValid &&
+      isEmailValid &&
+      isPasswordValid
+    ) {
+      formIsValid = true;
+      dispatch(
+        signup({
+          firstName: enteredFirstName,
+          lastName: enteredLastName,
+          email: enteredEmail,
+          mobileNo: enteredMobileNo,
+          password: enteredPassword,
+        })
+      );
+    }
+  };
 
   const onClose = () => {
     dispatch(loginActions.removeSignUp());
@@ -187,6 +201,7 @@ const SignUp = () => {
             <button
               className={classes.signUpButton}
               disabled={!formIsValid ? "disabled" : ""}
+              onClick={onSignup}
             >
               Sign Up
             </button>
