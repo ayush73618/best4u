@@ -5,6 +5,7 @@ import SignUp from "./components/Login/SignUp";
 import Navbar from "./components/Navbar/Navbar";
 import { useSelector } from "react-redux";
 import Notification from "./components/utilities/Notification";
+import Footer from "./components/utilities/Footer";
 
 function App() {
   const showLoginModal = useSelector(
@@ -29,6 +30,7 @@ function App() {
       {showLoginModal && <Login />}
       {showSignUpModal && <SignUp />}
       <HomePage />
+      <Footer />
     </>
   );
 }

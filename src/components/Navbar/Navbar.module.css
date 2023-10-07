@@ -110,7 +110,7 @@
 .dropdown:hover i {
   transform: rotate(180deg);
 }
-li:hover {
+.navlink li:hover {
   scale: 1.2;
 }
 

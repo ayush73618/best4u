@@ -1,0 +1,29 @@
+.footer {
+  width: 100%;
+  background-color: #232f3e;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+}
+.line {
+  width: 100%;
+  height: 0.4px;
+  background-color: #fff;
+}
+
+.footer-section ul li {
+  padding: 0.6rem 0 0 0;
+}
+
+.footer h2 {
+  margin: 1rem 0;
+}

@@ -54,15 +54,59 @@ const HomePage = () => {
   return (
     <>
       <div className="container">
+        {/* <div className={classes.types}>
+          <div className={classes.box}>
+            <img src="Assets/camera/cam-display-1.jpg" alt="" />
+            <h4>Electronic</h4>
+          </div>
+
+          <div className={classes.box}>
+            <img src="Assets/Clothing/pic-2.webp" alt="" />
+            <h4>Electronic</h4>
+          </div>
+
+          <div className={classes.box}>
+            <img src="Assets/camera/cam-display-1.jpg" alt="" />
+            <h4>Electronic</h4>
+          </div>
+
+          <div className={classes.box}>
+            <img src="Assets/camera/cam-display-1.jpg" alt="" />
+            <h4>Electronic</h4>
+          </div>
+
+          <div className={classes.box}>
+            <img src="Assets/Groceries/pic-2.jpg" alt="" />
+            <h4>Electronic</h4>
+          </div>
+
+          <div className={classes.box}>
+            <img src="Assets/camera/cam-display-1.jpg" alt="" />
+            <h4>Electronic</h4>
+          </div>
+        </div> */}
+
         <img
           src={changeDisplayPic}
           alt="homeImage"
           className={classes["home-page"]}
         />
+
+        <div className={classes["display-home"]}>
+          <ShowItem type="Electronics" pictureArray={pictureArray[0]} />
+          <ShowItem type="Clothing" pictureArray={pictureArray[1]} />
+          <ShowItem type="HouseHold" pictureArray={pictureArray[2]} />
+          <ShowItem type="Electronics" pictureArray={pictureArray[0]} />
+          <ShowItem type="Clothing" pictureArray={pictureArray[1]} />
+          <ShowItem type="HouseHold" pictureArray={pictureArray[2]} />
+        </div>
       </div>
-      <ShowItem type="Electronics" pictureArray={pictureArray[0]} />
-      <ShowItem type="Clothing" pictureArray={pictureArray[1]} />
-      <ShowItem type="HouseHold" pictureArray={pictureArray[2]} />
+      <div className={classes["deal-of-the-day"]}>
+        <img src="Assets/camera/cam-display-1.jpg" alt="alternate" />
+        <div className="description">
+          <h2>Iphone 15 plus</h2>
+        </div>
+      </div>
     </>
   );
 };
