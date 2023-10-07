@@ -89,7 +89,6 @@
   width: 250px;
   background: linear-gradient(to top left, grey, darkblue);
   border-radius: 8px;
-  transition: all 1s ease-in;
 }
 
 .dropdown-list li {
@@ -105,9 +104,14 @@
 .dropdown:hover .dropdown-list {
   display: inline-block;
 }
-
+.dropdown i {
+  transition: all 0.5s ease-in;
+}
 .dropdown:hover i {
   transform: rotate(180deg);
+}
+li:hover {
+  scale: 1.2;
 }
 
 .hamburger-menu {

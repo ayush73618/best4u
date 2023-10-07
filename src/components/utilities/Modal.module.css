@@ -16,10 +16,10 @@
   transform: translate(-50%, -50%);
   color: #fff;
   width: 30rem;
-  border-radius: 25px;
+  border-radius: 20px;
   opacity: 1;
   z-index: 100;
-  box-shadow: 4px 4px 12px purple;
+  box-shadow: 4px 4px 12px #41ef;
   animation: slide-down 1s ease-in-out;
   overflow: auto;
 }

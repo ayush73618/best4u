@@ -54,17 +54,11 @@ const HomePage = () => {
   return (
     <>
       <div className="container">
-        {/* <button className={classes["button-prev"]} onClick={onChangeDisplayPic}>
-          <i className="fa-solid fa-chevron-left"></i>
-        </button> */}
         <img
           src={changeDisplayPic}
           alt="homeImage"
           className={classes["home-page"]}
         />
-        {/* <button className={classes["button-next"]} onClick={onChangeDisplayPic}>
-          <i className="fa-solid fa-chevron-right"></i>
-        </button> */}
       </div>
       <ShowItem type="Electronics" pictureArray={pictureArray[0]} />
       <ShowItem type="Clothing" pictureArray={pictureArray[1]} />

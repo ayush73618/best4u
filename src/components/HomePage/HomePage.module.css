@@ -3,38 +3,6 @@
   height: 30rem;
 }
 
-.button-next {
-  position: fixed;
-  top: 30%;
-  right: 5.9rem;
-  height: 5rem;
-  width: 1.3rem;
-  font-size: 1.3rem;
-  cursor: pointer;
-}
-
-.home-page::before {
-  content: "Ayush";
-  position: fixed;
-  top: 30%;
-  right: 5.9rem;
-  height: 5rem;
-  width: 1.3rem;
-  font-size: 1.3rem;
-  cursor: pointer;
-  z-index: 4;
-}
-
-.button-prev {
-  position: fixed;
-  top: 30%;
-  left: 5.9rem;
-  height: 5rem;
-  width: 1.3rem;
-  font-size: 1.3rem;
-  cursor: pointer;
-}
-
 @media (max-width: 1300px) {
   .home-page {
     height: 24rem;

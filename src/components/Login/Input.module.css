@@ -71,8 +71,8 @@
   }
 
   .input > :is(input:focus, .has-value) ~ label {
-    font-size: 13px;
-    transform: translateY(-52px);
+    font-size: 15px;
+    transform: translateY(-53px);
     margin-top: 10px;
   }
 }
