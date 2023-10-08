@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 0.3rem;
 }
 
 .box {
@@ -13,7 +12,7 @@
   transition: all 0.8s ease-in-out;
   /* border: 1px solid #333; */
   border-radius: 8px;
-  margin: 1rem 0.3rem 0 0.3rem;
+  margin-top: 1rem;
 }
 
 .image {
@@ -29,7 +28,7 @@
 
 .show h3 {
   text-align: center;
-
+  font-size: 0.6rem;
   margin: 4px 0;
 }
 
@@ -37,6 +36,7 @@
   text-align: center;
   margin: 0 0 4px 0;
   color: purple;
+  font-size: 0.6rem;
   font-family: cursive;
 }
 
@@ -50,7 +50,7 @@
   border: none;
   margin-bottom: 0.8rem;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 0.5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   cursor: pointer;
 }
@@ -84,14 +84,14 @@
 
 @media (max-width: 1400px) and (min-width: 900px) {
   .box {
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
   }
 }
 
 @media (min-width: 1400px) and (max-width: 1700px) {
   .box {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
 }

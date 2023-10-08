@@ -163,9 +163,9 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .nav {
-    height: 50px;
+    height: 40px;
   }
   .navLink {
     font-size: 1rem;
