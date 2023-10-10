@@ -95,16 +95,34 @@ const HomePage = () => {
         <div className={classes["display-home"]}>
           <ShowItem type="Electronics" pictureArray={pictureArray[0]} />
           <ShowItem type="Clothing" pictureArray={pictureArray[1]} />
-          <ShowItem type="HouseHold" pictureArray={pictureArray[2]} />
+          <div className={classes["show-menu-boxes"]}>
+            <h3>Best Mobiles Phone At Lower Prices</h3>
+            <img src="Assets/mobiles/Iphone-1.jpg" alt="Iphone" />
+          </div>
+          <div className={classes.ad}>
+            <img src="Assets/ad/credit-card-ad.jpg" alt="ad" />
+          </div>
+          <ShowItem type="Groceries" pictureArray={pictureArray[2]} />
           <ShowItem type="Electronics" pictureArray={pictureArray[0]} />
           <ShowItem type="Clothing" pictureArray={pictureArray[1]} />
           <ShowItem type="HouseHold" pictureArray={pictureArray[2]} />
         </div>
       </div>
       <div className={classes["deal-of-the-day"]}>
-        <img src="Assets/camera/cam-display-1.jpg" alt="alternate" />
-        <div className="description">
-          <h2>Iphone 15 plus</h2>
+        <img src="Assets/mobiles/Iphone-1.jpg" alt="alternate" />
+        <div className={classes.description}>
+          <p>Deal Of The Day------------------------</p>
+          <p>
+            All New Iphone 15 Pro Max , Better than Ever , A17 Bionic Chip ,
+            24MP Back+Rear
+          </p>
+          <span className={classes.discount}>15% off</span>
+          <p className={classes.price}>
+            &#8377;50,999
+            <sup>
+              <del>&#8377;59,999</del>
+            </sup>
+          </p>
         </div>
       </div>
     </>

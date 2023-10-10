@@ -6,12 +6,12 @@
 }
 
 .box {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   overflow: hidden;
   transition: all 0.8s ease-in-out;
   /* border: 1px solid #333; */
-  border-radius: 8px;
+  /* border-radius: 8px; */
   margin-top: 1rem;
 }
 
@@ -28,7 +28,7 @@
 
 .show h3 {
   text-align: center;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   margin: 4px 0;
 }
 
@@ -36,7 +36,7 @@
   text-align: center;
   margin: 0 0 4px 0;
   color: purple;
-  font-size: 0.6rem;
+
   font-family: cursive;
 }
 
@@ -44,7 +44,7 @@
   text-align: center;
   width: 100%;
   background: linear-gradient(to top left, blue, skyblue);
-  border-radius: 4px;
+  /* border-radius: 4px; */
   outline: darkblue;
   padding: 0.4rem;
   border: none;
@@ -74,6 +74,10 @@
 }
 
 @media (max-width: 400px) {
+  .box {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 @media (max-width: 758px) and (min-width: 400px) {
@@ -86,6 +90,9 @@
   .box {
     width: 100px;
     height: 100px;
+  }
+  .show h4 {
+    font-size: 0.6rem;
   }
 }
 
