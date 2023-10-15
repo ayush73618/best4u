@@ -19,9 +19,12 @@
   width: 95%;
   height: auto;
   margin: 2rem 2rem;
-  border: 1px solid #333;
-  border-radius: 12px;
-  background-color: #eee;
+
+  background-color: #fff;
+}
+
+.show-menu-boxes:hover {
+  box-shadow: 4px 4px 4px #222;
 }
 
 .show-menu {
@@ -33,7 +36,7 @@
 
 @media (max-width: 599px) {
   .show-menu {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -45,9 +48,14 @@
 
 @media (max-width: 400px) {
   .show-menu {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     place-items: center;
+  }
+  .show-menu-boxes {
+    width: 100%;
+    border: none;
+    background-color: #fff;
   }
 }
 
@@ -57,9 +65,3 @@
     }
     
 } */
-
-@media (max-width: 1400px) {
-  .show-menu-boxes {
-    width: 95%;
-  }
-}

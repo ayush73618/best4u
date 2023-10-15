@@ -15,13 +15,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  width: 30rem;
+  width: 20rem;
   border-radius: 20px;
   opacity: 1;
   z-index: 100;
   box-shadow: 4px 4px 12px #41ef;
   animation: slide-down 1s ease-in-out;
-  overflow: auto;
 }
 
 @media (max-width: 450px) {
@@ -30,9 +29,9 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (min-width: 1400px) {
   .modal {
-    width: 25rem;
+    width: 30rem;
   }
 }
 

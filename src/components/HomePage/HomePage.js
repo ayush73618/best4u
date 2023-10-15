@@ -54,38 +54,6 @@ const HomePage = () => {
   return (
     <>
       <div className="container">
-        {/* <div className={classes.types}>
-          <div className={classes.box}>
-            <img src="Assets/camera/cam-display-1.jpg" alt="" />
-            <h4>Electronic</h4>
-          </div>
-
-          <div className={classes.box}>
-            <img src="Assets/Clothing/pic-2.webp" alt="" />
-            <h4>Electronic</h4>
-          </div>
-
-          <div className={classes.box}>
-            <img src="Assets/camera/cam-display-1.jpg" alt="" />
-            <h4>Electronic</h4>
-          </div>
-
-          <div className={classes.box}>
-            <img src="Assets/camera/cam-display-1.jpg" alt="" />
-            <h4>Electronic</h4>
-          </div>
-
-          <div className={classes.box}>
-            <img src="Assets/Groceries/pic-2.jpg" alt="" />
-            <h4>Electronic</h4>
-          </div>
-
-          <div className={classes.box}>
-            <img src="Assets/camera/cam-display-1.jpg" alt="" />
-            <h4>Electronic</h4>
-          </div>
-        </div> */}
-
         <img
           src={changeDisplayPic}
           alt="homeImage"
@@ -97,7 +65,9 @@ const HomePage = () => {
           <ShowItem type="Clothing" pictureArray={pictureArray[1]} />
           <div className={classes["show-menu-boxes"]}>
             <h3>Best Mobiles Phone At Lower Prices</h3>
-            <img src="Assets/mobiles/Iphone-1.jpg" alt="Iphone" />
+            <div className={classes.showBox}>
+              <img src="Assets/mobiles/Iphone-1.jpg" alt="Iphone" />
+            </div>
           </div>
           <div className={classes.ad}>
             <img src="Assets/ad/credit-card-ad.jpg" alt="ad" />

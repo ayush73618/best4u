@@ -4,18 +4,19 @@
 }
 
 .input label {
-  transform: translateY(-38px);
+  transform: translateY(-29px);
   margin: 0.2rem;
   margin-left: 1rem;
-  font-size: 20px;
+  font-size: 15px;
   z-index: 10;
+  color: #000;
   transition: transform 0.5s ease-in;
 }
 .input input {
   width: 100%;
-  height: 35px;
+  height: 25px;
   border-radius: 5px;
-  padding: 0.4rem;
+  padding: 0.6rem;
   outline: none;
   margin: 0.2rem;
   border: none;
@@ -26,12 +27,12 @@
   border: none;
   border-bottom: 1px solid #fff;
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .input > :is(input:focus, .has-value) ~ label {
-  font-size: 18px;
-  transform: translateY(-70px);
+  font-size: 15px;
+  transform: translateY(-58px);
   margin-top: 10px;
 }
 
@@ -58,21 +59,21 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (min-width: 1400px) {
   .input label {
-    font-size: 15px;
-    transform: translateY(-26px);
+    font-size: 22px;
+    transform: translateY(-36px);
   }
 
   .input input {
-    height: 25px;
+    height: 35px;
     padding: 0;
     margin: 0;
+    font-size: 22px;
   }
 
   .input > :is(input:focus, .has-value) ~ label {
-    font-size: 15px;
-    transform: translateY(-53px);
-    margin-top: 10px;
+    font-size: 22px;
+    transform: translateY(-74px);
   }
 }

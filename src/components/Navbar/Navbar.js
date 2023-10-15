@@ -33,6 +33,10 @@ const Navbar = () => {
     });
   };
 
+  console.log(
+    !showHamLink ? `${classes.nav}` : `${classes.nav}  ${classes.backDrop}`
+  );
+
   useEffect(() => {
     window.addEventListener("resize", detectSize);
     if (windowsDimension.innerWidth < 850) {
@@ -47,55 +51,61 @@ const Navbar = () => {
   }, [windowsDimension]);
 
   return (
-    <nav className={classes.nav}>
-      <div className={classes["logo-div"]}>
-        <a href="/">
-          <h2 className={classes.logo}>Best4U</h2>
-        </a>
-      </div>
-      <div className={classes["hamburger-menu"]} onClick={showHamLinks}>
-        <i className="fa-solid fa-bars"></i>
-      </div>
-      <ul
-        className={!showHamLink ? `${classes.navLink}` : `${classes.hamLink}`}
-      >
-        <li>
-          <a href="/">Home</a>
-        </li>
-        {isLoggedIn && (
-          <li className={classes.dropdown}>
-            {loggedUser.firstName} <i className="fa-solid fa-angle-down"></i>
-            <ul className={classes["dropdown-list"]}>
-              <li>About MySelf</li>
-              <li>My Orders</li>
-              <li>Edit Account</li>
-            </ul>
-          </li>
-        )}
-        {isLoggedIn && (
+    <>
+      <div
+        className={!showHamLink ? "" : classes.backDrop}
+        onClick={showHamLinks}
+      ></div>
+      <nav className={classes.nav}>
+        <div className={classes["logo-div"]}>
+          <a href="/">
+            <h2 className={classes.logo}>Best4U</h2>
+          </a>
+        </div>
+        <div className={classes["hamburger-menu"]} onClick={showHamLinks}>
+          <i className="fa-solid fa-bars"></i>
+        </div>
+        <ul
+          className={!showHamLink ? `${classes.navLink}` : `${classes.hamLink}`}
+        >
           <li>
-            <CartButton />
+            <a href="/">Home</a>
           </li>
-        )}
-        {!isLoggedIn && (
+          {isLoggedIn && (
+            <li className={classes.dropdown}>
+              {loggedUser.firstName} <i className="fa-solid fa-angle-down"></i>
+              <ul className={classes["dropdown-list"]}>
+                <li>About MySelf</li>
+                <li>My Orders</li>
+                <li>Edit Account</li>
+              </ul>
+            </li>
+          )}
+          {isLoggedIn && (
+            <li>
+              <CartButton />
+            </li>
+          )}
+          {!isLoggedIn && (
+            <li>
+              <a href="##" onClick={showLoginModal}>
+                Login/Signup
+              </a>
+            </li>
+          )}
+          {isLoggedIn && (
+            <li>
+              <a href="##" onClick={logout}>
+                Log out
+              </a>
+            </li>
+          )}
           <li>
-            <a href="##" onClick={showLoginModal}>
-              Login/Signup
-            </a>
+            <a href="##">Contact us</a>
           </li>
-        )}
-        {isLoggedIn && (
-          <li>
-            <a href="##" onClick={logout}>
-              Log out
-            </a>
-          </li>
-        )}
-        <li>
-          <a href="##">Contact us</a>
-        </li>
-      </ul>
-    </nav>
+        </ul>
+      </nav>
+    </>
   );
 };
 
