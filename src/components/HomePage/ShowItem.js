@@ -6,17 +6,6 @@ const ShowItem = (props) => {
     <div className={classes["show-menu-boxes"]}>
       <h4 style={{ textAlign: "center", marginTop: "0.5rem" }}>{props.type}</h4>
       <div className={`${classes["show-menu"]}`}>
-        {/* <h2 style={{ marginLeft: "1rem", textAlign: "center" }}>{props.type}</h2> */}
-        {/* <ShowItems
-          img={props.pictureArray[0]}
-          tagline="Starting from 6999"
-          types="Mobile"
-        />
-        <ShowItems
-          img={props.pictureArray[1]}
-          tagline="Starting from 9999"
-          types="Camera"
-        /> */}
         <ShowItems
           img={props.pictureArray[2]}
           tagline="Starting from 499"

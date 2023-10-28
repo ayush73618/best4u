@@ -59,24 +59,27 @@
 
 @media (max-width: 599px) {
   .box {
-    width: 200px;
-    height: 200px;
+    width: 165px;
+    height: 160px;
+  }
+  .box img {
+    border-radius: 8px;
   }
 }
 
-@media (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 750px) and (max-width: 900px) {
   .box {
-    max-width: 170px;
-    max-height: 170px;
+    width: 140px;
+    height: 140px;
   }
 }
-
+/* 
 @media (max-width: 400px) {
   .box {
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
   }
-}
+} */
 
 @media (max-width: 1400px) and (min-width: 900px) {
   .box {

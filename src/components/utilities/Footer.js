@@ -16,18 +16,26 @@ const Footer = () => {
 
         <div className={classes["individual-section"]}>
           <h4>Connect With Us</h4>
-          <ul>
+          <ul className={classes.social}>
             <li>
-              Facebook <i className="fab fa-facebook "></i>{" "}
+              <a href="##">
+                Facebook <i className="fab fa-facebook "></i>
+              </a>
             </li>
             <li>
-              Instagram <i className="fab fa-instagram "></i>
+              <a href="##">
+                Instagram <i className="fab fa-instagram "></i>
+              </a>
             </li>
             <li>
-              Twitter <i className="fab fa-twitter "></i>
+              <a href="##">
+                Twitter <i className="fab fa-twitter "></i>
+              </a>
             </li>
             <li>
-              Youtube <i className="fab fa-youtube "></i>
+              <a href="##">
+                Youtube <i className="fab fa-youtube "></i>
+              </a>
             </li>
           </ul>
         </div>
@@ -35,7 +43,7 @@ const Footer = () => {
         <div className={classes["individual-section"]}>
           <h4>For Any Queries</h4>
           <ul>
-            <li>Call Us at +91 8899888998</li>
+            <li>Call us on +91 8899888998</li>
             <li>Careers</li>
             <li>Best4U</li>
           </ul>

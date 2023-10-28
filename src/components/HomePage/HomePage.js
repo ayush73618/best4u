@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import classes from "./HomePage.module.css";
 import ShowItem from "./ShowItem";
 
 const HomePage = () => {
-  const displayPic = [
-    "Assets/pic-1.jpg",
-    "Assets/camera/pic-2.jpg",
-    "Assets/Clothing/pic-3.jpg",
-  ];
-  const [changeDisplayPic, setChangeDisplayPic] = useState(displayPic[0]);
+  //   const displayPic = [
+  //     "Assets/pic-1.jpg",
+  //     "Assets/camera/pic-2.jpg",
+  //     "Assets/Clothing/pic-3.jpg",
+  //   ];
+  // const [changeDisplayPic, setChangeDisplayPic] = useState(displayPic[0]);
 
   // useEffect(()=>{
   //  const interval =  setTimeout(() => {
@@ -55,7 +55,7 @@ const HomePage = () => {
     <>
       <div className="container">
         <img
-          src={changeDisplayPic}
+          src="Assets/pic-1.jpg"
           alt="homeImage"
           className={classes["home-page"]}
         />
