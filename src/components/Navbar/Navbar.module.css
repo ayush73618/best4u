@@ -47,10 +47,8 @@
   font-weight: 800;
   font-size: 2rem;
   background: linear-gradient(45deg, #0e9fe4, #0f9e);
-
   background-clip: text;
   -webkit-text-fill-color: transparent;
-
   animation: typing 2s steps(10) infinite alternate-reverse;
 }
 
@@ -76,11 +74,12 @@
 .dropdown-list {
   display: none;
   position: absolute;
-  top: 2.3rem;
+  top: 2.1rem;
   left: 0rem;
-  width: 250px;
+  width: 150px;
   background: linear-gradient(to top left, grey, darkblue);
   border-radius: 8px;
+  z-index: 0;
 }
 
 .dropdown-list li {
@@ -160,6 +159,7 @@
   .hamLink .dropdown .dropdown-list {
     top: 2rem;
     left: 0rem;
+    z-index: 2;
   }
 
   .hamLink li:hover {
@@ -170,7 +170,13 @@
     color: #fff;
   }
 }
-
+@media (max-width: 588px) {
+  .hamLink .dropdown .dropdown-list {
+    top: 1.4rem;
+    left: 0rem;
+    z-index: 2;
+  }
+}
 @media (min-width: 1400px) {
   .nav {
     height: 60px;
@@ -183,7 +189,7 @@
   }
 
   .dropdown-list {
-    top: 3.4rem;
+    top: 3.2rem;
   }
 }
 

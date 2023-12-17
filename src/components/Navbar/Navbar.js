@@ -33,10 +33,6 @@ const Navbar = () => {
     });
   };
 
-  console.log(
-    !showHamLink ? `${classes.nav}` : `${classes.nav}  ${classes.backDrop}`
-  );
-
   useEffect(() => {
     window.addEventListener("resize", detectSize);
     if (windowsDimension.innerWidth < 850) {

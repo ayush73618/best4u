@@ -64,7 +64,7 @@ const Login = () => {
     // fetch('https:localhost:8080/users').then((data)=>{
     //   console.log(data);
     // })
-
+    event.preventDefault();
     dispatch(login(enteredEmail, enteredPassword));
   };
   return (
