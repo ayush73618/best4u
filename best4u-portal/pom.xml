@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.best4u</groupId>
-	<artifactId>best4uPortal</artifactId>
+	<artifactId>best4u-portal</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>best4u-starter</name>
+	<name>best4u-portal</name>
 	<description>Backend for Best4u</description>
 	<properties>
 		<java.version>17</java.version>

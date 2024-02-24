@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.best4u</groupId>
-	<artifactId>best4Ugateway</artifactId>
+	<artifactId>best4u-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>best4u-gateway</name>
 	<description>Gateway-Service For Best4U</description>

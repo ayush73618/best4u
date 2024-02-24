@@ -10,7 +10,7 @@
 
     <modules>
         <module>best4u-gateway</module>
-        <module>best4u-starter</module>
+        <module>best4u-portal</module>
     </modules>
 
 </project>
