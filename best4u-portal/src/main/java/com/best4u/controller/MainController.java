@@ -54,6 +54,7 @@ public class MainController {
 	
 	@GetMapping("/users/{email}")
 	public User findUserByEmail(@PathVariable String email) {
+		//System.out.println(userService.findUserByEmail(email).toString());
 		return userService.findUserByEmail(email);
 		
 	}
