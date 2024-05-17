@@ -25,7 +25,7 @@ const SignUp = () => {
   const [isMobileNoTouched, setIsMobileNoTouched] = useState(false);
   const [isPasswordTouched, setIsPasswordTouced] = useState(false);
 
-  const isFirstNameValid = enteredFirstName.length > 3 && isFirstNameTouched;
+  const isFirstNameValid = enteredFirstName.length >= 3 && isFirstNameTouched;
   const isFirstNameHasError = enteredFirstName.length < 3 && isFirstNameTouched;
 
   const isLastNameValid = enteredLastName.length > 3 && isLastNameTouched;
@@ -111,7 +111,8 @@ const SignUp = () => {
       fetch(`http://localhost:8080/users/${enteredEmail}`)
         .then((res) => res.text())
         .then((data) => {
-          if (data === null) {
+          console.log(data);
+          if (data === "") {
             dispatch(
               signup({
                 firstName: enteredFirstName,
