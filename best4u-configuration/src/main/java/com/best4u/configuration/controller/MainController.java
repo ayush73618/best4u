@@ -1,4 +1,4 @@
-package com.best4u.controller;
+package com.best4u.configuration.controller;
 
 import java.util.List;
 
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.best4u.entity.User;
-import com.best4u.service.UserService;
+import com.best4u.configuration.entity.User;
+import com.best4u.configuration.service.UserService;
 
 
 

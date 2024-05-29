@@ -1,8 +1,8 @@
-package com.best4u.persistence;
+package com.best4u.configuration.persistence;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.best4u.entity.User;
+import com.best4u.configuration.entity.User;
 
 public interface  UserDao extends JpaRepository<User, Integer> {
 	

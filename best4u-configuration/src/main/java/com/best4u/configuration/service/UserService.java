@@ -1,10 +1,10 @@
-package com.best4u.service;
+package com.best4u.configuration.service;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.best4u.entity.User;
+import com.best4u.configuration.entity.User;
 
 @Service
 public interface UserService {

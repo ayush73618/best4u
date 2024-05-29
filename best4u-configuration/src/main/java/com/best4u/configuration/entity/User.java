@@ -1,4 +1,4 @@
-package com.best4u.entity;
+package com.best4u.configuration.entity;
 
 //import jakarta.annotation.Generated;
 import jakarta.persistence.Column;

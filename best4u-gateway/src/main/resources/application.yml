@@ -1,0 +1,12 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: best4u-service
+  cloud:
+    gateway:
+      routes:
+        - id: best4u-configuration
+          uri: lg://best4u-configuration
+          predicates:
+             -  Path=/users/**  

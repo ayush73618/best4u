@@ -1,4 +1,4 @@
-package com.best4u.service.impl;
+package com.best4u.configuration.service.impl;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,9 +6,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.best4u.entity.User;
-import com.best4u.persistence.UserDao;
-import com.best4u.service.UserService;
+import com.best4u.configuration.entity.User;
+import com.best4u.configuration.persistence.UserDao;
+import com.best4u.configuration.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService{

@@ -11,6 +11,7 @@
     <modules>
         <module>best4u-gateway</module>
         <module>best4u-portal</module>
+        <module>best4u-configuration</module>
     </modules>
 
 </project>
