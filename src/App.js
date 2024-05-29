@@ -24,15 +24,15 @@ function App() {
           element: <HomePage />,
         },
         {
-          path: "login",
+          path: "/login",
           element: <Login />,
         },
         {
-          path: "register",
+          path: "/register",
           element: <SignUp />,
         },
         {
-          path: "products/:product_Id",
+          path: "/products/:product_Id",
           element: <Products />,
           loader: productsLoader,
         },

@@ -51,7 +51,7 @@ const Footer = () => {
       </div>
       <div className={classes.line}></div>
 
-      <h2>All @copyright Reserved by BestSHOP4U</h2>
+      <h2>All @copyright Reserved by Best4U</h2>
     </div>
   );
 };
