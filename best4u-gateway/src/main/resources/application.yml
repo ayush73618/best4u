@@ -2,7 +2,7 @@ server:
   port: 8088
 spring:
   application:
-    name: best4u-service
+    name: best4u-gateway-service
   cloud:
     gateway:
       routes:
@@ -10,3 +10,12 @@ spring:
           uri: lg://best4u-configuration
           predicates:
              -  Path=/users/**  
+  main:
+    web-application-type: reactive
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultUrl: http://localhost:8761/
+    register-with-eureka: true
+    fetch-registry: true

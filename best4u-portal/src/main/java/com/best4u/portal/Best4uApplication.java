@@ -1,4 +1,4 @@
-package com.best4u;
+package com.best4u.portal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
