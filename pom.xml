@@ -23,6 +23,7 @@
 		<module>best4u-portal</module>
 		<module>best4u-configuration</module>
 		<module>best4u-eureka</module>
+		<module>best4u-product</module>
 	</modules>
 
 	<dependencyManagement>
