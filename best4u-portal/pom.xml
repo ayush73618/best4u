@@ -48,12 +48,24 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
-		<groupId>org.projectlombok</groupId>
-		<artifactId>lombok</artifactId>
-		<scope>provided</scope>
-	</dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.best4u.common</groupId>
+			<artifactId>best4u-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.best4u.domain</groupId>
+			<artifactId>best4u-domain</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 
 	</dependencies>
 
